@@ -1,6 +1,6 @@
 import Web3 from "web3";
 
-class NFTWeb3 {
+export class NFTWeb3 {
     instance?: Web3
     eth: ETH
 
@@ -15,7 +15,6 @@ class NFTWeb3 {
     }
 }
 
-export default NFTWeb3
 
 class ETH {
     instance: Web3
