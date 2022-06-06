@@ -9,13 +9,10 @@ var tranHex = '0x1e768c51fff4f31ccb8bc2305f7914a0034aecdc995b03564d2d12108c3b988
 
 (async () => {
     try {
-        let web3 = new NFTWeb3();
-        let success = await web3.InitInstance(chain)
-        console.log(success)
+        let web3 = new NFTWeb3('');
 
-        let balance = await web3.GetBalance(wallet1)
+        let balance = await web3.eth.eth_getBalance(wallet1)
         console.log('Balance 1: ', balance)
-
 
     } catch (err: any) {
         console.log('Error: ', err.message)
