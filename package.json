@@ -1,7 +1,11 @@
 {
   "name": "wrapper-web3-typescript",
   "version": "1.0.0",
-  "main": "index.ts",
+  "main": "dist/index.ts",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "repository": "git@github.com:datbqvng/wrapper-web3-typescript.git",
   "author": "datbqvng",
   "license": "MIT",
@@ -10,7 +14,7 @@
     "typescript": "^4.7.2"
   },
   "scripts": {
-    "start": "ts-node-dev --respawn index.ts",
+    "start": "ts-node-dev --respawn src/index.ts",
     "build": "tsc"
   },
   "dependencies": {
